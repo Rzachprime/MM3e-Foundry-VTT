@@ -22,5 +22,4 @@
     "gridUnits": "ft",
     "primaryTokenAttribute": "wounds",
     "initiative": "1d20 + @agility"
-
 }
