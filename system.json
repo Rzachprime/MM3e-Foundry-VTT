@@ -1,0 +1,26 @@
+{
+    "name": "MM3e-Foundry-VTT",
+    "title": "Mutants & Masterminds 3e",
+    "description": "A system for playing Mutants & Masterminds 3rd Edition",
+    "author": "Rzach",
+    "version": 0.01,
+    "minimumCoreVersion":"9.240",
+    "compatibleCoreVersion":"9.240",
+    "esmodules":[
+        "m&m3e.js"
+    ],
+    "styles":[
+        "m&m3e.css"
+    ],
+    "packs":[
+
+    ],
+    "languages":[
+
+    ],
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "wounds",
+    "initiative": "1d20 + @agility"
+
+}
