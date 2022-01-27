@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "..\\..\\..\\..\\FoundryVTT\\Foundry Virtual Tabletop\\resources\\app"
+		},
+		{
+			"path": "..\\dnd5e"
 		}
 	],
 	"settings": {}
