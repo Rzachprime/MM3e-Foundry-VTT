@@ -1,0 +1,10 @@
+{
+    "mm3e":{
+        "type":{
+            "advantage": "Advantage",
+            "power": "Power",
+            "extra": "Extra",
+            "flaw": "Flaw"
+        }
+    }
+}
