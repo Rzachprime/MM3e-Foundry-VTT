@@ -7,10 +7,10 @@
     "minimumCoreVersion":"9.245",
     "compatibleCoreVersion":"9.245",
     "esmodules":[
-        "m&m3e.js"
+        "mm3e.js"
     ],
     "styles":[
-        "m&m3e.css"
+        "mm3e.css"
     ],
     "packs":[
 
