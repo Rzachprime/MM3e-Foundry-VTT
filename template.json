@@ -1,9 +1,39 @@
 {
     "Actor":{
-        "types":[
-            "character",
-            "equipment"
-        ]
     },
-    "Equipment":{}
+    "Item":{
+        "types": [
+            "advantages",
+            "powers",
+            "modifiers"
+        ],
+        "templates":{
+            "effect":{
+                "type":"",
+                "name":"",
+                "effectDescription":"",
+                "cost": 0,
+                "isFlat": false
+            }
+        },
+        "advantages":{
+            "name":"",
+            "collectionName":"",
+            "description":"",
+            "templates":["effect"]
+        },
+        "powers":{
+            "name":"",
+            "groupName":"",
+            "description":"",
+            "templates":["effect"]
+        },
+        "modifiers":{
+            "name":"",
+            "parentName":"",
+            "groupName":"",
+            "description":"",
+            "templates":["effect"]
+        }
+    }
 }

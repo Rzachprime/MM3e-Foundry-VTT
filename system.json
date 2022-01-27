@@ -4,8 +4,8 @@
     "description": "A system for playing Mutants & Masterminds 3rd Edition",
     "author": "Rzach",
     "version": 0.01,
-    "minimumCoreVersion":"9.240",
-    "compatibleCoreVersion":"9.240",
+    "minimumCoreVersion":"9.245",
+    "compatibleCoreVersion":"9.245",
     "esmodules":[
         "m&m3e.js"
     ],
