@@ -2,9 +2,32 @@
     "mm3e":{
         "type":{
             "advantage": "Advantage",
-            "power": "Power",
+            "power": "Power Effect",
             "extra": "Extra",
             "flaw": "Flaw"
+        },
+        "effect":{
+            "type":"Type",
+            "name":"Rule Name",
+            "effectDescription":"Rule Text",
+            "cost": "Cost",
+            "isFlat": "Is Flat Cost"
+        },
+        "advantage":{
+            "name":"Name",
+            "collectionName": "Array Name",
+            "description": "Description"
+        },
+        "power":{
+            "name":"Name",
+            "groupName":"Array Name",
+            "description":"Flavor Text"
+        },
+        "modifier":{
+            "name":"Name",
+            "parentName":"Assigned Power Effect",
+            "groupName":"Parent Power",
+            "description":"Notes"
         }
     }
 }

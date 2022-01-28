@@ -6,16 +6,23 @@
     <div>
         <table>
             <tr>
-                <th>{{localize "mm3e.advantages.name"}}</th>
-                <th>{{localize "mm3e.advantages.collectionName"}}</th>
-                <th>{{localize "mm3e.advantages.description"}}</th>
-                <th>{{localize "mm3e.advantages.effect.type"}}</th>
-                <th>{{localize "mm3e.advantages.effect.name"}}</th>
-                <th>{{localize "mm3e.advantages.effect.effectDescription"}}</th>
-                <th>{{localize "mm3e.advantages.effect.cost"}}</th>
-                <th>{{localize "mm3e.advantages.effect.isFlat"}}</th>
+                <th>{{localize "mm3e.advantage.name"}}</th>
+                <th>{{localize "mm3e.advantage.collectionName"}}</th>
+               
+                <th>{{localize "mm3e.effect.type"}}</th>
+                <th>{{localize "mm3e.effect.name"}}</th>
+                
+                <th>{{localize "mm3e.effect.cost"}}</th>
+                <th>{{localize "mm3e.effect.isFlat"}}</th>
             </tr>
             <tr>
+               
+                <td>
+                    <input name="data.name" type="text" value="{{data.name}}"/>
+                </td>
+                <td>
+                    <input name="data.collectionName" type="text" value="{{data.collectionName}}"/>
+                </td>
                 <td>
                     <select name="data.effect.type">
                         {{#select data.effect.type}}
@@ -25,24 +32,11 @@
                         {{/select}}
                     </select>
                 </td>
-                <td>
-                    <input name="data.name" type="text" value="{{data.name}}"/>
-                </td>
-                <td>
-                    <input name="data.collectionName" type="text" value="{{data.collectionName}}"/>
-                </td>
-                <td>
-                    
-                </td>
-                <td>
-                    <input name="data.effect.type" type="text" value="{{data.effect.type}}"/>
-                </td>
+                
                 <td>
                     <input name="data.effect.name" type="text" value="{{data.effect.name}}"/>
                 </td>
-                <td>
-                    
-                </td>
+
                 <td>
                     <input name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/>
                 </td>
@@ -51,7 +45,11 @@
                 </td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
-        <textarea name="data.effect.effectDescription"> {{data.effect.effectDescription}}</textarea>
+        <h6>{{localize "mm3e.advantage.description"}}</h6>
+        <br/>
+        <textarea rows="8" cols="120" name="data.description" style="margin: 0.1em;">{{data.description}}</textarea>
+        <br/>
+        <h6>{{localize "mm3e.effect.effectDescription"}}</h6>
+        <textarea rows="8" cols="120" name="data.effect.effectDescription" style="margin: 0.1em;"> {{data.effect.effectDescription}}</textarea>
     </div>
 </form>
