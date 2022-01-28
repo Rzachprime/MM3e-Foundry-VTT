@@ -1,55 +1,38 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+        <h1><input name="item.name" type="text" value="{{item.name}}" placeholder="{{localize 'mm3e.advantage.name'}}" style="font-weight: bold;"/></h1>
     </header>
     <div>
         <table>
-            <tr>
-                <th>{{localize "mm3e.advantage.name"}}</th>
-                <th>{{localize "mm3e.advantage.collectionName"}}</th>
-               
+            <tr style="text-align: center; font-weight: bold;">
                 <th>{{localize "mm3e.effect.type"}}</th>
-                <th>{{localize "mm3e.effect.name"}}</th>
-                
-                <th>{{localize "mm3e.effect.cost"}}</th>
-                <th>{{localize "mm3e.effect.isFlat"}}</th>
+                <th>{{localize "mm3e.advantage.collectionName"}}</th>
+                <th>{{localize "mm3e.advantage.ruleName"}}</th>                
+                <th>{{localize "mm3e.advantage.cost"}}</th>
+                <th>{{localize "mm3e.advantage.isFlat"}}</th>
             </tr>
             <tr>
-               
                 <td>
-                    <input name="data.name" type="text" value="{{data.name}}"/>
+                    <input style="text-align: center; font-weight: bold;" name="data.type" type="text" value="{{localize 'mm3e.advantage.type'}}" readonly/>
                 </td>
                 <td>
                     <input name="data.collectionName" type="text" value="{{data.collectionName}}"/>
                 </td>
                 <td>
-                    <select name="data.effect.type">
-                        {{#select data.effect.type}}
-                        {{#each config.typeNames as |name type|}}
-                        <option value={{type}}>{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
-                    </select>
-                </td>
-                
-                <td>
-                    <input name="data.effect.name" type="text" value="{{data.effect.name}}"/>
-                </td>
-
-                <td>
-                    <input name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/>
+                    <input name="data.ruleName" type="text" value="{{data.ruleName}}"/>
                 </td>
                 <td>
-                    <input name="data.isFlat" type="text" value="{{data.isFlat}}"/>
+                    <input style="text-align: center;" name="data.cost" type="text" value="{{data.cost}}" data-dtype="Number"/>
+                </td>
+                <td style="text-align: center;">
+                    <input name="data.isFlat" type="checkbox" value="{{data.isFlat}}"/>
                 </td>
             </tr>
         </table>
-        <h6>{{localize "mm3e.advantage.description"}}</h6>
-        <br/>
+        <h4><b>{{localize "mm3e.advantage.description"}}</b></h4>
         <textarea rows="8" cols="120" name="data.description" style="margin: 0.1em;">{{data.description}}</textarea>
-        <br/>
-        <h6>{{localize "mm3e.effect.effectDescription"}}</h6>
+        <h4><b>{{localize "mm3e.effect.effectDescription"}}</b></h4>
         <textarea rows="8" cols="120" name="data.effect.effectDescription" style="margin: 0.1em;"> {{data.effect.effectDescription}}</textarea>
     </div>
 </form>

@@ -16,18 +16,32 @@
         "advantage":{
             "name":"Name",
             "collectionName": "Array Name",
-            "description": "Description"
+            "ruleName": "Rule Name",
+            "description": "Flavor Text",
+            "type":"Advantage",
+            "effectDescription":"Rules",
+            "cost": "Cost",
+            "isFlat": "Is Flat Cost"
         },
         "power":{
             "name":"Name",
             "groupName":"Array Name",
-            "description":"Flavor Text"
+            "powerEffect":"Power Effect",
+            "description":"Flavor Text",
+            "type":"Power",
+            "effectDescription":"Rules",
+            "cost": "Cost",
+            "isFlat": "Is Flat Cost"
         },
         "modifier":{
             "name":"Name",
             "parentName":"Assigned Power Effect",
-            "groupName":"Parent Power",
-            "description":"Notes"
+            "groupName":"Target Power",
+            "description":"Notes",
+            "type":"Modifier",
+            "effectDescription":"Rules",
+            "cost": "Cost",
+            "isFlat": "Is Flat Cost"
         }
     }
 }

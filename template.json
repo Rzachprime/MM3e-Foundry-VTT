@@ -19,21 +19,32 @@
         "advantages":{
             "name":"",
             "collectionName":"",
+            "ruleName":[],
             "description":"",
-            "templates":["effect"]
+            "type":"",
+            "effectDescription":"",
+            "cost": 0,
+            "isFlat": false
         },
         "powers":{
             "name":"",
             "groupName":"",
+            "powerEffect":"",
             "description":"",
-            "templates":["effect"]
+            "type":"",
+            "effectDescription":"",           
+            "cost": 0,
+            "isFlat": false
         },
         "modifiers":{
             "name":"",
             "parentName":"",
             "groupName":"",
             "description":"",
-            "templates":["effect"]
+            "type":"",
+            "effectDescription":"",
+            "cost": 0,
+            "isFlat": false
         }
     }
 }
